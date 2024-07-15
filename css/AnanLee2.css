@@ -1,0 +1,230 @@
+
+#神秘术,#传承,#塑造{
+    display:flex;
+    align-items: flex-end;
+}
+h2{
+    color:#e9dccd; 
+}
+
+h3{
+    display:inline-block;
+    color:grey;
+}
+
+.sk-infobox {
+    display: flex;
+    padding-bottom: 6px;
+}
+
+.card-img {
+    padding-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* @media (max-width: 767.99px) {
+    .card-img {
+        align-items: flex-end;
+        flex-direction: row; 怎么部分行部分列?
+    }
+} */
+
+.card-img-0 {
+    position: relative;
+    width: 168px;
+    min-width: 168px;
+}
+
+.card-img-0>img {
+    pointer-events: none;
+    user-select: none;
+}
+
+.card-img-1 {
+    position: absolute;
+    width: 97%;
+    bottom: 2.7%;
+    margin: auto;
+    left: -0.5%;
+    right: 0;
+}
+
+.card-img-1.ex {
+    width: 85%;
+    bottom: 5%;
+    left: -0.5%;
+}
+
+.card-img-1 img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+
+}
+
+.card-img-2 {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    width: 99%;
+    bottom: 1.2%;
+}
+
+.card-img-2.ex {
+    width: 130%;
+    bottom: -12%;
+    left: -13%;
+}
+.card-desc-0:not(.ex) {
+    padding-bottom: 18px;
+}
+
+.card-desc-0 {
+    display: flex;
+    width: 100%;
+}
+
+
+.card-desc-1 {
+    display: flex;
+    padding-left: 12px;
+
+    flex-direction: row;
+    padding-right: 12px;
+    width: 33%;
+}
+
+.card-desc-2:not(.ex) {
+    flex-grow:1;
+    padding-bottom: 34px;
+    box-sizing: border-box; /* 使用border-box模型 */
+}
+
+
+.paper-texture,
+.tooltips-content {
+    background-color: #F7EBE7;
+    border: 3px solid #C3B7A0;
+    color: black;
+    padding: 15px;
+    position: relative;
+}
+
+.color-value {
+    color: #cb573e;
+}
+
+hr.decorate {
+    border-image: linear-gradient(90deg, #A69E95 0 50px, transparent 50px 58px, #a69e95 58px 68px, transparent 68px 76px, #a69e95 76px) 1;
+    margin: 8px 0;
+}
+
+.grey-small {
+    color: grey;
+    font-size: smaller;
+}
+
+.card-desc-type {
+    position: absolute;
+    width: 50%;
+    max-width: 85px;
+    bottom: 10px;
+    right: 7px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.card-desc-type img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+
+}
+
+.img-fit {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+
+.tooltips:not(td) {
+    display: inline-block;
+}
+
+.tooltips {
+    position: relative;
+    text-underline-position: from-font;
+}
+
+.tooltips-content {
+    visibility:hidden;
+    position: absolute;
+    overflow: visible;
+    min-width: 250px;
+    padding: 12px 16px;
+    display: block;
+    user-select: none;
+    cursor: auto;
+    left: 50%;
+    bottom: calc(8px + 100%);
+    z-index: 99999;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid #a2a9b1;
+    border-radius: 4px;
+    white-space: normal;
+    text-shadow: none;
+    font-weight: normal;
+    font-style: initial;
+    text-align: center;
+    font-size: 14px;
+    clip-path: none !important;
+    line-height: 1.42857143;
+    opacity: 0;
+    transition: opacity 200ms ease, visibility 0s ease 200ms, transform 200ms ease;
+    transform: translate(-50%, 8px);
+}
+
+.buff-label {
+    background-color: #808080;
+    color: white;
+    padding: 0 4px;
+    width: fit-content;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.color-sk {
+    color: #5050db;
+}
+
+.card-title {
+    text-align: center;
+    word-wrap: break-word;
+    font-size: larger;
+    color: #bc9567;
+    font-family: 'Noto Serif SC', serif;
+    font-weight: bold;
+}
+.card-img-0 {
+    position: relative;
+    width: 168px;
+    min-width: 168px;
+}
+
+.card-desc-1.ex{
+    width:31%;
+    height: 91%;
+}
+.card-desc-2.ex{
+    flex-grow: 1;
+    padding-bottom: 34px;
+    box-sizing: border-box;
+    margin:0 0 20px 0;
+}
+

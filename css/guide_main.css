@@ -1,0 +1,153 @@
+/* styles.css */
+
+body {
+    height: 100%;
+    background-image: url(../img/BG.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* overflow-y: hidden; 防止垂直滚动条出现 但这样就不能滚动了哈 */
+    overflow-x: hidden;
+    font-family: 'STZhongsong';
+}
+
+.navigation {
+
+    font-size:20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.filter {
+    color: #ffffff;
+}
+
+
+#search {
+    margin: 10px;
+    width: 250px;
+    background-color: #ebebeb1f;
+    border: 2px solid #f05e107e;
+    border-radius: 15px;
+    /* 添加这一行 */
+    color: #ffffff;
+    font-size: 17px;
+    cursor:text;
+}
+
+.filter-title {
+    font-family:'STZhongsong';
+    font-size: 34px;
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+    left: 70px;
+    cursor:default;
+}
+
+.btnFilter {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 20px;
+    width: 90px;
+    height: 60px;
+    background-color: #ebebeb1f;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border: 2px solid #f05e107e;
+    border-radius: 17px;
+
+    /* 添加这一行 */
+}
+
+#all{
+    font-size: 17px;
+    justify-content: center;
+}
+.btn:hover {
+    background-color: #fca02f;
+}
+
+.btn.active {
+    background-color: #FFA500;
+    /* 橘色 */
+}
+
+.btnText {
+    font-size: 17px;
+    justify-content: center;
+
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.character {
+    margin: 10px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.089);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(239, 122, 26, 0.755);
+    cursor: pointer;
+}
+
+.character img {
+    width: 150px;
+    border: 2px solid #f05e107e;
+    object-fit: cover;
+    background-color: #212121;
+    /* border-radius: 50%; */
+}
+
+.character-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fca02f;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>攻略</title>
+    <link rel="stylesheet" href="./css/guide_main.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" onclick="switchPage('角色')">角色</a></li>
+            <li><a href="#" onclick="switchPage('心相')">心相</a></li>
+            <li><a href="#" onclick="switchPage('荒原')">荒原</a></li>
+            <li><a href="#" onclick="switchPage('梦游')">梦游</a></li>
+            <li><a href="#" onclick="switchPage('章节')">章节</a></li>
+        </ul>
+    </nav>
+    <div id="content" class="content">
+        <!-- 角色页面内容 -->
+        <div id="角色" class="page active">
+            <div class="filter">
+
+                <div class="filter-title">角色列表</div>
+                <div class="btnFilter">
+                    <button class='btn' id="all">全 部</button>
+                    <button class='btn' id="mineral">
+                        <img src='img/guide/career/Career_1.png' alt='mineral' class="btnImg">
+                        <div class='btnText'>岩</div>
+                    </button>
+                    <button class='btn' id="star">
+                        <img src='img/guide/career/Career_2.png' alt='star' class="btnImg">
+                        <div class='btnText'>星</div>
+                    </button>
+                    <button class='btn' id="plant">
+                        <img src='img/guide/career/Career_3.png' alt='plant' class="btnImg">
+                        <div class='btnText'>木</div>
+                    </button>
+                    <button class='btn' id="beast">
+                        <img src='img/guide/career/Career_4.png' alt='beast' class="btnImg">
+                        <div class='btnText'>兽</div>
+                    </button>
+                    <button class='btn' id="spirit">
+                        <img src='img/guide/career/Career_5.png' alt='spirit' class="btnImg">
+                        <div class='btnText'>灵</div>
+                    </button>
+                    <button class='btn' id="intellect">
+                        <img src='img/guide/career/Career_6.png' alt='intellect' class="btnImg">
+                        <div class='btnText'>智</div>
+                    </button>
+                    <input type="text" id="search" placeholder="输入筛选条件...">
+                </div>
+
+            </div>
+
+            <div class="characters">
+                <div class="character" data-type="plant">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-308701.png" alt="维拉">
+                    </div>
+                    <div class="character-name">维拉</div>
+                </div>
+                <div class="character" data-type="plant">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-303901.png" alt="泥鯭的士">
+                    </div>
+                    <div class="character-name">泥鯭的士</div>
+                </div>
+                <div class="character" data-type="mineral">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-308401.png" alt="葛天">
+                    </div>
+                    <div class="character-name">葛天</div>
+                </div>
+                <div class="character" data-type="mineral">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-308301.png" alt="曲娘">
+                    </div>
+                    <div class="character-name">曲娘</div>
+                </div>
+                <div class="character" data-type="spirit">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-308101.png" alt="伊索尔德">
+                    </div>
+                    <div class="character-name">伊索尔德</div>
+                </div>
+                <div class="character" data-type="star">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-300401.png" alt="红弩箭">
+                    </div>
+                    <div class="character-name">红弩箭</div>
+                </div>
+                <div class="character" data-type="intellect">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-307901.png" alt="6">
+                    </div>
+                    <div class="character-name">6</div>
+                </div>
+                <div class="character" data-type="star">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-307701.png" alt="北方哨歌">
+                    </div>
+                    <div class="character-name">北方哨歌</div>
+                </div>
+                <div class="character" data-type="star">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-307401.png" alt="爱兹拉">
+                    </div>
+                    <div class="character-name">爱兹拉</div>
+                </div>
+                <div class="character" data-type="beast">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-307201.png" alt="鬃毛沙砾">
+                    </div>
+                    <div class="character-name">鬃毛沙砾</div>
+                </div>
+                <div class="character" data-type="star">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-306601.png" alt="37">
+                    </div>
+                    <div class="character-name">37</div>
+                </div>
+                <div class="character" data-type="plant">
+                    <div class="character-img">
+                        <img src="./img/guide/Headicon_large-306501.png" alt="马库斯">
+                    </div>
+                    <div class="character-name">马库斯</div>
+                </div>
+            </div>
+
+            <!-- 其他页面内容 -->
+
+            
+        </div>
+        <!-- 心相、荒原、梦游、章节页面的内容 -->
+        <div id="心相" class="page">
+            <div style="color:aliceblue">这里是心相页面</div>
+            
+        </div>
+    </div>
+
+    <script src="./js/guide.js"></script>
+    <!-- <script src="./js/tablefilter/tablefilter.js"></script> -->
+
+</body>
+
+</html>

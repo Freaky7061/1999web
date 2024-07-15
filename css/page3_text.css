@@ -1,0 +1,87 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+a {
+	color: #888;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #333;
+}
+
+.grid {
+	padding: 20px 20px 20px 20px;
+	max-width: 1300px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	/* width: 440px; */
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* padding: 20px; */
+	
+	color:#E9DCCD;
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	font-size: 24px;
+	line-height: 20px;
+	padding:5px;
+	font-family:'STZhongsong';
+}
+
+.grid figcaption span{
+	text-align:left;
+	padding:5px 40px 5px 40px;
+	display: block;
+}
+
+/* 说明文字样式 6 */
+
+.cs-style-6 figure img {
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-6 figure:hover img,
+.cs-style-6 figure.cs-hover img {
+	-webkit-transform: translateY(-50px) scale(0.5);
+	-moz-transform: translateY(-50px) scale(0.5);
+	-ms-transform: translateY(-50px) scale(0.5);
+	transform: translateY(-50px) scale(0.5);
+}
+
+.cs-style-6 figcaption {
+	height: 100%;
+	width: 100%;
+}
+
+.cs-style-6 figcaption h3 {
+	margin-top: 45%;
+}
+

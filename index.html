@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="《重返未来：1999》是一款20世纪复古神秘学策略RPG。1999年的最后一天，一场“暴雨”向天空倾泻，世界似乎来到一个崭新的旧时代。而你，将作为“司辰”，无数时代的见证者，带领神秘学家们逃离“暴雨”。">
+    <title>1999:重返未来</title>
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/page1.css">
+    <link rel="stylesheet" href="./css/page2.css">
+    <link rel="stylesheet" href="./css/page3.css">
+    <link rel="stylesheet" href="./css/page3_text.css">
+    <link rel="stylesheet" href="./js/swiper-10.3.1/swiper/swiper-bundle.css">
+    <script src="./js/swiper-10.3.1/swiper/swiper-bundle.js"></script>
+    <script src="./Caption-Hover-Effects-6/js/modernizr.custom.js"></script>
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <nav>
+            <div class="h-con-left">
+                <a href="./">
+                    <img src="./img/logo.png" alt="重返未来logo" class="head-logo">
+                </a>
+            </div>
+            <div class="h-con-right">
+                <div class="h-con-right-l">
+                    <div class="div-center" id="banner0">
+                        <a href="#首页">
+                            <div class="div-head-text">首页</div>
+                            <div class="div-head-text-en">HOME</div>
+                        </a>
+                    </div>
+                    <div class="div-center" onclick="changeBanner(1)" id="banner1">
+                        <a href="#资讯">
+                            <div class="div-head-text">资讯</div>
+                            <div class="div-head-text-en">NEWS</div>
+                        </a>
+                    </div>
+                    <div class="div-center" onclick="changeBanner(2)" id="banner2">
+                        <a href="#世界">
+                            <div class="div-head-text">世界</div>
+                            <div class="div-head-text-en">BACKSTORY</div>
+                        </a>
+                    </div>
+                    <a class="div-center" href="guide.html" target="_blank" id="banner5">
+                        <!-- >style="text-decoration: none;" -->
+                        <div class="div-head-text">更多</div>
+                        <div class="div-head-text-en">DETAILS</div>
+                    </a>
+                </div>
+                <div class="h-con-right-r">
+                    <div class="h-con-right-r-con">
+                        <div style="position:relative">
+                            <img src="./img/share.png" alt="" onclick="changeShare()" data-mouse="mid" data-type="share"
+                                id="imgShare">
+                        </div>
+                        <div>
+                            <img src="./img/v2.webp" alt="" onclick="muteMusic(1)" class="imgMusicPlay shareMusic"
+                                style="display: none;">
+                            <img src="./img/v2c.png" alt="" onclick="muteMusic(2)" class="imgMusicStop shareMusic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!---->
+    <span id="首页"></span>
+    <div class="page1" style="position: relative;">
+        <video src="./kv/p.mp4" style="width:100%;" muted="" autoplay="" loop="" id="kvPc" poster="./kv/p.jpg"
+            __idm_id__="581635" ></video>
+    
+        <img src="./img/tail/1.png" alt="重返未来" style="position:absolute; z-index:1; 
+        top: 400px; left: 150px;">
+        <img src="./img/tail/2.png" alt="重返未来" style="position:absolute; z-index:1;
+        top: 700px;left:50px;">
+        <img src="./img/tail/官网下载二维码_202c1eaf76bc4f9ba3b825ee4f942a36.png" alt="重返未来" style="position:absolute; z-index:1;
+        top: 550px;right: 500px;width: 200px;">
+        <img src="./img/tail/android.png" alt="重返未来" style="position:absolute; z-index:1;
+        top: 595px;
+    right: 300px;">
+        <img src="./img/tail/ios.png" alt="重返未来" style="position:absolute; z-index:1;
+        top: 658px;
+    right: 300px;">
+    </div>
+
+    <!--no ues?-->
+    <span id="资讯"></span>
+    <div class="page2">
+        <div class="news-left">
+            <img src="./img/news1.jpg" alt="新闻" id="news">
+        </div>
+
+        <div class="news-right">
+            <div class="news-right-head">
+                <div class="news-right-head-img">
+                    <img src="./img/News.png" alt="" class="news-icon">
+                </div>
+                <div class="news-right-head-bg">
+                    <div class="news-right-head-bg-list news-right-head-bg-list-active""
+                        id="news0" data-mouse="mid">最新</div>
+                    <div class="news-right-head-bg-list" id="news1">公告</div>
+                    <div class="news-right-head-bg-list" id="news2">活动</div>
+                    <div class="news-right-head-bg-list" id="news3">新闻</div>
+                </div>
+            </div>
+            <div class="news-right-con-list">
+                <div class="news-right-con-list-left">
+                    <div class="news-right-con-list-left-icon">
+                        <img src="./img/see.png" alt="">
+                    </div>
+                    <div class="news-right-con-list-left-type">最新</div>
+                    <div class="news-right-con-list-left-title">1999制作组播报 第七期</div>
+                </div>
+                <div class="news-right-con-list-left-time">2024-03-28</div>
+            </div>
+            <div class="news-right-con-list" >
+                <div class="news-right-con-list-left">
+                    <div class="news-right-con-list-left-icon">
+                        <img src="./img/see.png" alt="">
+                    </div>
+                    <div class="news-right-con-list-left-type">最新</div>
+                    <div class="news-right-con-list-left-title">1.7「今夜星光灿烂」版本更新维护公告</div>
+                </div>
+                <div class="news-right-con-list-left-time">2024-02-21</div>
+            </div>
+            <div class="news-right-con-list">
+                <div class="news-right-con-list-left">
+                    <div class="news-right-con-list-left-icon">
+                        <img src="./img/see.png" alt="">
+                    </div>
+                    <div class="news-right-con-list-left-type">最新</div>
+                    <div class="news-right-con-list-left-title">《重返未来：1999》获TapTap年度大赏最佳视觉奖&amp;心上的TA奖</div>
+                </div>
+                <div class="news-right-con-list-left-time">2024-01-20</div>
+            </div>
+            <div class="news-right-con-list" >
+                <div class="news-right-con-list-left">
+                    <div class="news-right-con-list-left-icon">
+                        <img src="./img/see.png" alt="">
+                    </div>
+                    <div class="news-right-con-list-left-type">最新</div>
+                    <div class="news-right-con-list-left-title">1.6「朔日手记」版本更新维护公告</div>
+                </div>
+                <div class="news-right-con-list-left-time">2024-01-10</div>
+            </div>
+            <div class="news-right-foot">
+                <div class="news-right-foot-button" onclick="goToMore()">
+                    <img src="./img/jian.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <span id="世界"></span>
+    <div class="page3">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul class="grid cs-style-6">
+                        <figure>
+                            <img src="./img/backstory/p1.png" />
+                            <figcaption>
+                                <h3>暴雨</h3>
+                                <span>1999年12月31日，23点59分。世纪之交的缝隙中，一场“暴雨”往天空倾泻。所有派对、彩灯、末班巴士都在下一刻消逝。世界回到了一个崭新的旧时代。
+                                    <br>一个年轻的小姑娘，一位“司辰”，唯一不受雨水侵袭之人，无数时代的见证者。她在洪流中穿梭，结识来自不同时代与国家的神秘学家伙伴。而后，带领他们……逃离“暴雨”。
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="grid cs-style-6">
+                        <figure>
+                            <img src="./img/backstory/p2.png" />
+                            <figcaption>
+                                <h3>爵士时代</h3>
+                                <span>每个时代都有它的标志性城市，60年代属于伦敦，而20年代毫无疑问属于纽约。
+                                    <br>1920年代的纽约，现代科学也在化一切为可能。福特汽车、无线电的使用，将世界推向乐观浪潮的更远处。爵士乐响彻通宵，人们在查尔斯顿舞步中奔赴下一场宴会。
+                                    <br>没有人能拒绝加入这场狂欢。</span>
+                            </figcaption>
+                        </figure>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="grid cs-style-6">
+                        <figure>
+                            <img src="./img/backstory/p3.png" />
+                            <figcaption>
+                                <h3>摇滚狂潮</h3>
+                                <span>20世纪60年代的一切都很好。
+                                    波普艺术和嬉皮士风格开始在年轻人中流行起来，伦敦成为了“酷的中心”（Capital of Cool）。
+                                    <br>更重要的是，海盗电台和摇滚乐在此兴起了。
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/backstory/p4.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/backstory/p5.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/backstory/p6.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/backstory/p7.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/backstory/p8.png" />
+                </div>
+
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/backstory/p1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/backstory/p2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/backstory/p3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/backstory/p4.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/backstory/p5.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/backstory/p6.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/backstory/p7.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/backstory/p8.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer>
+            <div class="footer">
+                <div class="footer-img">
+                    <img src="./img/tail/logo.png" alt="logo" class="footer-logo">
+                    <img src="./img/tail/age.png" alt="age" class="footer-age">
+                    <div class="footer-text">
+                        <div class="footer-text title">许可及服务协议&nbsp;&nbsp;&nbsp;隐私政策&nbsp;&nbsp;&nbsp;家长监护工程</div>
+                        <div class="footer-text low">
+                            适龄提示：本游戏适合12岁（含）以上的用户使用
+                            <br>抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。
+                            <br>适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+                            <br>全国警方反诈劝阻电话“96110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。
+                            <br>电话：020-89885336 | 客服邮箱：Re99cs@bluepoch.com | 商务邮箱：re1999_business@bluepoch.com
+                            <br>©2021 深蓝互动版权所有 | 广州深蓝互动网络科技有限公司 | 粤公网安备44010502002654 |粤ICP备 2021071545</div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+html {
+    background-image: url(../img/ananLee/BG.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'STZhongsong';
+}
+
+body{
+    margin: 35px;
+}
+.page-header {
+    /* background-color: #9d9d9d; */
+    padding: 20px;
+    border-bottom: 3px solid #f08f11;
+    color:#e9dccd;
+    background: linear-gradient(to left, rgba(190, 120, 93, 0.158), rgba(121, 71, 9, 0.8));
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(40, 40, 40, 0.847);
+    padding:40px;
+
+}
+
+.content-body {
+    display: flex;
+}
+
+/* .content-body-main{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.infobox-right,
+.infobox-left {
+
+    margin: 10px;
+    padding: 20px;
+}
+
+.infobox-right {
+    position: relative;
+    width: 50%;
+
+}
+
+.infobox-left {
+    width: 40%;
+    padding:0 0 0 40px;
+}
+
+/* 设置infobox-box的样式 */
+.infobox-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3px;
+}
+
+/* 设置infobox-content的样式 */
+.infobox-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #e9dccd;
+}
+
+.infobox-content img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* 设置color-darkgold类的样式 */
+.color-darkgold {
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+
+/* 设置所有链接的颜色为深蓝色，鼠标悬停时为浅蓝色 */
+/* .infobox-right */
+
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+
+}
+
+/* 创建一个固定边框 */
+.img-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    width: 60%;
+    height: 600px;
+    /* 你可以根据需要调整边框的高度 */
+    border: 4px solid #8d8d8d;
+    /* 设置边框的颜色和宽度 */
+    background-color: #fd101000;
+    /* 你可以根据需要调整边框的颜色 */
+    left: 50%;
+    /* 将元素的左边移动到父元素的中心 */
+    transform: translateX(-50%);
+    /* 使用transform将元素自身向左移动50%，以实现居中 */
+    z-index: 1;
+    /* 将边框置于图片之下 */
+}
+
+.img-box img {
+    display: none;
+    height: 600px;
+    width: auto;
+    justify-content: center;
+    z-index: 3;
+}
+
+.tabber-filter {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.tabber-filter button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 3px solid #f05e107e;
+    background-color:#ffffff00;
+    transition: background-color 0.3s ease;
+}
+
+.tabber-filter button:hover {
+    background-color: rgba(121, 120, 119, 0.755);
+}
+
+.tabber-filter button.active{
+    background-color: rgba(239, 122, 26, 0.755);
+}
+
+a {
+    color: #ff7a06;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b35606;
+    transition: color 0.3s ease;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.menu-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:darkgoldenrod
+}
+
+/* 设置菜单按钮的样式 */
+.menu-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+/* 设置信息框的样式 */
